@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Landing Page</title>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      nav{
+        max-width: 1200px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: #242b2e;
+        padding: 5px;
+      }
+      .large-screen{
+        display: none;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+      }
+      .small-screen{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 20px;
+        width: 100%;
+    }
+    .large-screen img{
+        width: 50px;
+    }
+    .small-screen img{
+        width: 30px;
+     }
+     .nav-links{
+      display: flex;
+      align-items: center;
+     }
+     .nav-links a{
+        text-decoration: none;
+        margin-right: 25px;
+        color: aliceblue;
+     }
+     .nav-links a:hover{
+        color: aqua;
+        scale: 1.1;
+     }
+     .large-screen button{
+        margin: 10px 0px;
+        padding: 0px 40px;
+        background-color: aqua;
+        color: #fff;
+        border: 0;
+        border-radius: 5px;
+        font-weight: bold;
+     }
+     .large-screen button:hover{
+        scale: 1.1;
+        cursor: pointer;
+     }
+     .hero-section{
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .hero-section video{
+      width: 905;
+      border: 0;
+      outline: 0;
+     }
+     .hero-section .text-section{
+      height: 600px;
+      width: 100%;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     }
+     .text-section h3{
+      font-size: 30px;
+      margin-bottom: 0;
+     }
+     .text-section h1{
+      font-size: 50px;
+      margin-bottom: 0;
+      margin-top: 5px;
+      color: blue;
+     }
+     .text-section h4{
+      margin: 30px 0px;
+      font-size: 15px;
+      color: blue;
+     }
+     .sponser-images img{
+      width: 60px;
+      margin-bottom: 20px;
+     }
+     .info-section{
+      width: 1200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      padding: 100px 0px;
+     }
+     .info-section h1{
+      font-size: 30px;
+      color: aqua;
+      text-align: center;
+     }
+   .info-section p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: lighter
+   }
+   @media screen and (min-width=800px){
+        .large-screen{
+          display: flex;
+        }
+        .small-screen{
+          display: none;
+        }
+        .hero-section{
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-between;
+        }
+        .hero-section video{
+          width: 600px;
+          height: 600px;
+        }
+        .info-section{
+          background-color: #000;
+          color: #fff;
+        }
+        .info-section h1{
+          font-size: 60px;
+        }
+        .info-section p{
+          font-size: 40px;
+        }
+   }
+      </style>
+</head>
+<body>
+      <nav>
+        <section class="large-screen">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+            <div nav="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <button>Login</button>
+        </section>
+        <section class="small-screen">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+            <div>
+              <span class="material-symbols-outlined">Menu</span>
+            </div>
+        </section>
+      </nav>
+      <main class="hero-section">
+        <div class="text-section">
+        <h3>Say Hi To</h3>
+        <h1>One Card</h1>
+        <h4>Co-Branded Card issuers :</h4>
+        <div class="sponser-images">
+            <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="sponser">
+        </div>
+        <p>
+            India's best metal credit card. Built with full-stack tech. Backed by
+            the principles of simplicity, transparency, and giving back control to
+            the user.
+        </p>
+        </div>
+        <video 
+        loop 
+        autoplay
+         controls 
+        src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+        ></video>
+      </main>
+      <section class="info-section">
+        <h1>No Hidden Fees Ever</h1>
+        <p>No Joining Fees.</p>
+        <p>No Annual Fees.</p>
+        <p>No Rewards Redemption Fees.</p>
+      </section>
+</body>
+</html>
